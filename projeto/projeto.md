@@ -13,7 +13,14 @@ A EC2 está em uma **sub-rede privada**, portanto precisa de acesso à internet 
 ---
 
 ### Security Groups (SG) necessários:
+Realize a criação dos SGs a seguir e delete todas as regras neles:
 
+Ec2_SG,
+EFS_SG,
+RDS_SG,
+Load_Balancer_SG 
+
+Agora podemos definir as regras de cada grupo: 
 #### 🔐 `EC2_SG`
 - **Inbound**:ADICIONE SSH E para o SEU IP, ADICIONE HTTP e selecione o SG do Load Balancer, ADCIONE NFS e selecione o SG do EFS
 - ![EC2_INBOUND](https://github.com/user-attachments/assets/ca5ae310-593a-4efb-a588-3a5a02f7166f)
