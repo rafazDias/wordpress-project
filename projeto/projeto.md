@@ -94,7 +94,7 @@ curl -L "https://github.com/docker/compose/releases/download/v2.5.0/docker-compo
 chmod +x /usr/local/bin/docker-compose
 
 mkdir -p /mnt/efs
-mount -t efs {SEU_EFS_ID}:/ /mnt/efs
+mount -t nfs4 {SEU_EFS_ID}:/ /mnt/efs
 
 mkdir -p /mnt/efs/wordpress
 chown -R 33:33 /mnt/efs/wordpress
