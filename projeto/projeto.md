@@ -187,3 +187,4 @@ http://<ALB-DNS>.elb.amazonaws.com
 
 - O WordPress estará disponível e acessível com arquivos persistidos no EFS.
 
+![Captura de tela de 2025-05-08 22-12-52](https://github.com/user-attachments/assets/2192a2fc-4ee4-4134-b714-03a584b074a1)
